@@ -1,9 +1,16 @@
-trigger:
-- dev
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- script: echo "Pipeline is running"
-  displayName: 'Test pipeline'
+jobs:
+- job: Linux
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - script: echo hello from Linux
+- job: macOS
+  pool:
+    vmImage: 'macOS-latest'
+  steps:
+  - script: echo hello from macOS
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - script: echo hello from Windows
