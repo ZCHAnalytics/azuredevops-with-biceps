@@ -1,6 +1,6 @@
 jobs:
-- job: Linux
+- job: Windows
   pool:
-    vmImage: 'ubuntu-latest'
+    vmImage: 'windows-latest'
   steps:
-  - script: echo hello from Linux
+  - script: echo hello from Windows
