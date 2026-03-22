@@ -1,8 +1,8 @@
 trigger:
 - dev
 pool: 
-  name: cloudresumebiceps
-  vmImage: ubuntu-latest
+  name: 'cloudresumebiceps'
+  vmImage: 'ubuntu-latest'
   
 jobs:
 - job: testjob
