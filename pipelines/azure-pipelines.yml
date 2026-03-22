@@ -1,0 +1,9 @@
+trigger:
+- dev
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "Pipeline is running"
+  displayName: 'Test pipeline'
