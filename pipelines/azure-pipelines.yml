@@ -1,11 +1,7 @@
-trigger:
-- dev
-pool: 
-  name: 'cloudresumebiceps'
-  vmImage: 'ubuntu-latest'
-  
 jobs:
-- job: testjob
-  displayName: 'simple test job'
-  steps: 
-  - script: echo "hello from self-hosted agent" && whoami && pwd 
+- job: Windows
+  pool:
+    name: cloudresumebiceps
+    vmImage: ubuntu-latest
+  steps:
+  - script: echo hello from Windows
