@@ -1,7 +1,6 @@
 jobs:
 - job: Windows
   pool:
-    name: cloudresumebiceps
     vmImage: ubuntu-latest
   steps:
   - script: echo hello from Windows
