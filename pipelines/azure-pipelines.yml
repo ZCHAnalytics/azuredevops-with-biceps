@@ -1,6 +1,6 @@
 jobs:
 - job: Windows
   pool:
-    name: windows-selfhosted
+    name: default
   steps:
   - script: echo hello from Windows
