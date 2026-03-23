@@ -1,6 +1,6 @@
 jobs:
 - job: Windows
   pool:
-    vmImage: ubuntu-latest
+    name: windows-selfhosted
   steps:
   - script: echo hello from Windows
